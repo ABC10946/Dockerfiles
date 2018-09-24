@@ -1,0 +1,11 @@
+version:
+    '0.1'
+services:
+    cpp:
+        build: .
+        volumes:
+            - $HOME/Programs/cpp:/root/Programs
+            - $HOME/.vimrc:/root/.vimrc
+            - $HOME/.vim/:/root/.vim
+        tty:
+            true
