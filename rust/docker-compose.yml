@@ -7,5 +7,7 @@ services:
             - $HOME/Programs/rust:/root/Programs
             - $HOME/.vimrc:/root/.vimrc
             - $HOME/.vim/:/root/.vim
+        environment:
+            - USER=$USER
         tty:
             true
