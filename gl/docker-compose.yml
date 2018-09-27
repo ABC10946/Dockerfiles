@@ -1,0 +1,12 @@
+version: '3'
+services:
+    gl:
+        build: .
+        volumes:
+            - $HOME/Programs/:/root/Programs
+            - $HOME/.vimrc:/root/.vimrc
+            - $HOME/.vim/:/root/.vim
+            - $HOME/.Xauthority/:/root/.Xauthority
+        network_mode: host
+        tty:
+            true
